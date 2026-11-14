@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<component name="GuideItem" extends="Group">
+  <interface>
+    <field id="itemContent" type="node" onChange="onContent" />
+    <field id="width" type="float" />
+    <field id="height" type="float" />
+  </interface>
+  <script type="text/brightscript" uri="pkg:/components/GuideItem.brs" />
+  <children>
+    <Poster id="logo" translation="[8,7]" width="52" height="40" loadDisplayMode="scaleToFit" />
+    <Label id="name" translation="[70,4]" width="180" height="46" color="0xFFFFFF" vertAlign="center" />
+    <Label id="now" translation="[262,3]" width="330" height="28" color="0xFFFFFF" />
+    <Rectangle id="trackbg" translation="[262,34]" width="330" height="4" color="0x20383D" />
+    <Rectangle id="trackfill" translation="[262,34]" width="0" height="4" color="0xF5C400" />
+    <Label id="next" translation="[610,3]" width="166" height="46" color="0xB8C4C5" vertAlign="center" />
+  </children>
+</component>

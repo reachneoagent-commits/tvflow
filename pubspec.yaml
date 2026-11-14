@@ -1,0 +1,54 @@
+name: tvflow
+description: "TVflow: a local-first IPTV player for Mac, Windows, Android TV, Fire TV and Roku."
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.13.0
+
+dependencies:
+  flutter:
+    sdk: flutter
+  media_kit: ^1.2.6
+  media_kit_video: ^2.0.1
+  media_kit_libs_video: ^1.0.7
+  drift: ^2.34.3
+  drift_flutter: ^0.3.1
+  sqlite3_flutter_libs: ^0.6.0+eol
+  http: ^1.6.0
+  path_provider: ^2.1.6
+  path: ^1.9.1
+  file_picker: ^12.0.0
+  url_launcher: ^6.3.2
+  intl: ^0.20.3
+  xml: ^6.6.1
+  archive: ^4.0.7
+  cryptography: ^2.7.0
+  crypto: ^3.0.6
+  uuid: ^4.5.1
+  window_manager: ^0.5.1
+  collection: ^1.19.1
+  lucide_icons_flutter: ^4.0.1
+  path_drawing: ^1.0.1
+  cast: ^2.1.0
+  bonsoir: ^7.1.5
+  package_info_plus: ^10.2.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+  build_runner: ^2.16.0
+  drift_dev: ^2.34.5
+
+flutter:
+  uses-material-design: true
+  fonts:
+    - family: Inter
+      fonts:
+        - asset: assets/fonts/Inter.ttf
+    - family: RobotoCondensed
+      fonts:
+        - asset: assets/fonts/RobotoCondensed.ttf
+  assets:
+    - assets/brand/logo.png

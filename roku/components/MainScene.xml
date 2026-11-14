@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<component name="MainScene" extends="Scene">
+  <script type="text/brightscript" uri="pkg:/components/MainScene.brs" />
+  <children>
+    <Rectangle id="bg" color="0x080D0F" width="1280" height="720" />
+    <Poster id="logo" loadDisplayMode="scaleToFit" uri="pkg:/images/logo.png" translation="[100,46]" width="36" height="36" />
+    <Rectangle id="pill" color="0xF5C400" translation="[180,44]" width="130" height="40" />
+    <Group id="nav" />
+    <Label id="clock" text="" translation="[1000,48]" width="180" height="40" color="0xFFFFFF" horizAlign="right" />
+    <Rectangle id="line" color="0x20383D" translation="[100,102]" width="1080" height="2" />
+    <Label id="header" text="" translation="[100,112]" width="640" height="32" color="0xB8C4C5" />
+    <Label id="plname" text="" translation="[760,112]" width="420" height="32" color="0xF5C400" visible="false" horizAlign="right" />
+    <LabelList id="cats" translation="[100,120]" itemSize="[270,48]" numRows="10" focusBitmapUri="pkg:/images/focus.9.png" color="0xB8C4C5" focusedColor="0xFFFFFF" visible="false" />
+    <MarkupGrid id="grid" translation="[400,120]" itemComponentName="GridItem" itemSize="[128,208]" itemSpacing="[14,12]" numColumns="5" numRows="2" focusBitmapUri="pkg:/images/focus.9.png" visible="false" />
+    <LabelList id="chlist" translation="[390,160]" itemSize="[350,48]" numRows="9" focusBitmapUri="pkg:/images/focus.9.png" color="0xB8C4C5" focusedColor="0xFFFFFF" visible="false" />
+    <MarkupList id="guide" translation="[400,160]" itemComponentName="GuideItem" itemSize="[780,54]" numRows="8" focusBitmapUri="pkg:/images/focus.9.png" visible="false" />
+    <Group id="lmodes" visible="false" />
+    <Group id="sbtn" visible="false" />
+    <LabelList id="list" translation="[100,156]" itemSize="[1080,48]" numRows="9" focusBitmapUri="pkg:/images/focus.9.png" color="0xB8C4C5" focusedColor="0xFFFFFF" visible="false" />
+    <LabelList id="homelist" translation="[100,120]" itemSize="[1080,48]" numRows="9" focusBitmapUri="pkg:/images/focus.9.png" color="0xB8C4C5" focusedColor="0xFFFFFF" visible="false" />
+    <RowList id="homerow" translation="[100,112]" numRows="3" itemComponentName="PosterItem" itemSize="[1080,206]" itemSpacing="[0,6]" rowItemSize="[[232,130]]" rowItemSpacing="[[18,0]]" showRowLabel="[true]" rowLabelOffset="[[0,0]]" focusXOffset="[0]" rowLabelColor="0xFFFFFF" focusBitmapUri="pkg:/images/focus.9.png" visible="false" />
+    <Group id="pform" translation="[100,112]" visible="false" />
+    <Group id="detail" translation="[100,120]" visible="false">
+      <Poster id="dposter" loadDisplayMode="scaleToFit" translation="[0,0]" width="200" height="290" />
+      <Rectangle id="dfavbg" color="0x080D0FCC" translation="[166,6]" width="30" height="30" visible="false" />
+      <Poster id="dfav" uri="pkg:/images/ic_heart-fill_g.png" translation="[171,11]" width="20" height="20" visible="false" />
+      <Label id="dtitle" translation="[232,0]" width="848" height="44" color="0xFFFFFF" />
+      <Label id="dmeta" translation="[232,48]" width="848" height="32" color="0xB8C4C5" />
+      <Label id="dplot" translation="[232,92]" width="848" height="190" wrap="true" lineSpacing="6" color="0xB8C4C5" />
+      <Group id="dbtns" translation="[232,292]" />
+    </Group>
+    <Group id="sdetail" translation="[100,114]" visible="false">
+      <Poster id="sdposter" loadDisplayMode="scaleToFit" translation="[0,0]" width="116" height="168" />
+      <Rectangle id="sdfavbg" color="0x080D0FCC" translation="[82,6]" width="30" height="30" visible="false" />
+      <Poster id="sdfav" uri="pkg:/images/ic_heart-fill_g.png" translation="[87,11]" width="20" height="20" visible="false" />
+      <Label id="sdtitle" translation="[142,0]" width="938" height="40" color="0xFFFFFF" />
+      <Label id="sdmeta" translation="[142,42]" width="938" height="28" color="0xB8C4C5" />
+      <Label id="sdplot" translation="[142,72]" width="938" height="52" wrap="true" lineSpacing="4" color="0xB8C4C5" />
+      <Group id="sdbtns" translation="[142,126]" />
+      <Group id="sdseasons" translation="[0,186]" />
+      <RowList id="sdeps" translation="[0,246]" numRows="1" itemComponentName="EpisodeItem" itemSize="[1080,200]" rowItemSize="[[252,190]]" rowItemSpacing="[[16,0]]" showRowLabel="[false]" focusBitmapUri="pkg:/images/focus.9.png" />
+    </Group>
+    <LabelList id="eps" translation="[400,120]" itemSize="[780,48]" numRows="9" visible="false" />
+    <Rectangle id="footbar" color="0x080D0F" translation="[0,624]" width="1280" height="96" />
+    <Rectangle id="footline" color="0x20383D" translation="[100,624]" width="1080" height="2" />
+    <Label id="epg" text="" translation="[400,572]" width="780" height="28" color="0xF5C400" />
+    <Label id="status" text="" translation="[740,650]" width="440" height="26" color="0xFFB547" horizAlign="right" />
+    <Label id="hint" text="" translation="[100,650]" width="630" height="26" color="0xB8C4C5" />
+    <Timer id="tick" repeat="true" duration="1" />
+    <Timer id="navTimer" repeat="false" duration="0.6" />
+    <WebTask id="web" />
+    <Timer id="catTimer" repeat="false" duration="0.5" />
+    <Timer id="epgTimer" repeat="false" duration="0.5" />
+    <Timer id="autoTimer" repeat="false" duration="8" />
+    <Timer id="saveTimer" repeat="true" duration="20" />
+    <Timer id="toastTimer" repeat="false" duration="3" />
+    <Timer id="pbarTimer" repeat="false" duration="7" />
+    <Timer id="pvTimer" repeat="false" duration="1" />
+    <Timer id="gdTimer" repeat="false" duration="0.4" />
+    <Video id="video" translation="[0,0]" width="1280" height="720" visible="false" />
+    <Group id="pbar" visible="false">
+      <Rectangle id="pbbg" color="0x000000D8" translation="[0,586]" width="1280" height="134" />
+      <Label id="ptitle" text="" translation="[60,598]" width="620" height="36" color="0xFFFFFF" />
+      <Label id="psub" text="" translation="[60,640]" width="1160" height="28" color="0xF5C400" />
+      <Group id="pbtns" />
+      <Label id="phint" text="" translation="[60,682]" width="1160" height="26" color="0xB8C4C5" />
+    </Group>
+    <Rectangle id="trkbg" color="0x080D0FF0" translation="[860,90]" width="340" height="452" visible="false" />
+    <LabelList id="trk" translation="[870,100]" itemSize="[320,48]" numRows="9" focusBitmapUri="pkg:/images/focus.9.png" color="0xB8C4C5" focusedColor="0xFFFFFF" visible="false" />
+    <Rectangle id="toastbg" color="0x000000C8" translation="[0,630]" width="1280" height="90" visible="false" />
+    <Label id="toast" text="" translation="[60,652]" width="1160" height="44" color="0xF5C400" visible="false" />
+  </children>
+</component>

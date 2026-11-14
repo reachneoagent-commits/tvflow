@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<component name="WebTask" extends="Task">
+  <interface>
+    <field id="ready" type="boolean" value="false" />
+    <field id="error" type="string" />
+    <field id="newSource" type="assocarray" />
+  </interface>
+  <script type="text/brightscript" uri="pkg:/components/WebTask.brs" />
+</component>

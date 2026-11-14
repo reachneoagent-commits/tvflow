@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<component name="GridItem" extends="Group">
+  <interface>
+    <field id="itemContent" type="node" onChange="onContent" />
+    <field id="width" type="float" onChange="layout" />
+    <field id="height" type="float" onChange="layout" />
+  </interface>
+  <script type="text/brightscript" uri="pkg:/components/GridItem.brs" />
+  <children>
+    <Rectangle id="bgbox" color="0x20383D" translation="[0,0]" width="128" height="182" />
+    <Poster id="pic" translation="[0,0]" width="128" height="182" loadDisplayMode="scaleToFit" />
+    <Rectangle id="favbg" color="0x080D0FCC" translation="[98,4]" width="26" height="26" visible="false" />
+    <Poster id="fav" uri="pkg:/images/ic_heart-fill_g.png" translation="[101,7]" width="20" height="20" visible="false" />
+    <Label id="name" translation="[0,186]" width="128" height="22" color="0xFFFFFF" wrap="false" />
+  </children>
+</component>

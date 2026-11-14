@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<component name="PosterItem" extends="Group">
+  <interface>
+    <field id="itemContent" type="node" onChange="layout" />
+    <field id="width" type="float" onChange="layout" />
+    <field id="height" type="float" onChange="layout" />
+  </interface>
+  <script type="text/brightscript" uri="pkg:/components/PosterItem.brs" />
+  <children>
+    <Rectangle id="bgbox" color="0x20383D" translation="[0,0]" width="128" height="182" />
+    <Poster id="pic" translation="[0,0]" width="128" height="182" loadDisplayMode="scaleToFit" />
+    <Rectangle id="trackbg" color="0xFFFFFF40" translation="[0,125]" width="232" height="5" visible="false" />
+    <Rectangle id="trackfill" color="0xF5C400" translation="[0,125]" width="0" height="5" visible="false" />
+    <Rectangle id="favbg" color="0x080D0FCC" translation="[98,4]" width="26" height="26" visible="false" />
+    <Poster id="fav" uri="pkg:/images/ic_heart-fill_g.png" translation="[101,7]" width="20" height="20" visible="false" />
+    <Label id="name" translation="[0,186]" width="128" height="24" color="0xFFFFFF" wrap="false" />
+    <Label id="subtitle" translation="[0,210]" width="232" height="24" color="0xB8C4C5" wrap="false" visible="false" />
+  </children>
+</component>
