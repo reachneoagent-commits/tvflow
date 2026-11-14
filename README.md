@@ -6,15 +6,15 @@ TVflow plays playlists you add yourself (M3U links, Xtream Codes logins or Stalk
 
 ## Download
 
-Get the latest build from the [Releases page](../../releases/latest).
-
-| Device | File |
+| Platform | Installer |
 |---|---|
-| Mac | `TVflow.dmg` or `TVflow-for-Mac.zip` |
-| Windows | `TVflow-Windows.zip` |
-| Android phone or tablet, Android TV | `TVflow-Android.apk` |
-| Fire TV / Fire Stick | `TVflow-for-FireTV.zip` (install steps inside) |
-| Roku | `TVflow-for-Roku.zip` (needs developer mode, steps inside) |
+| macOS (Apple Silicon and Intel) | [DMG](https://github.com/reachneoagent-commits/tvflow/releases/download/v1.0.0/tvflow-1.0.0-macos-universal.dmg) |
+| Windows x64 | [Portable zip](https://github.com/reachneoagent-commits/tvflow/releases/download/v1.0.0/tvflow-1.0.0-windows-x64-portable.zip) |
+| Android phone, tablet and Android TV | [APK](https://github.com/reachneoagent-commits/tvflow/releases/download/v1.0.0/tvflow-1.0.0-android.apk) |
+| Fire TV / Fire Stick | [Zip with install steps](https://github.com/reachneoagent-commits/tvflow/releases/download/v1.0.0/tvflow-1.0.0-firetv.zip) |
+| Roku | [Zip with install steps](https://github.com/reachneoagent-commits/tvflow/releases/download/v1.0.0/tvflow-1.0.0-roku.zip) |
+
+Older versions are on the [Releases page](../../releases). Checksums are in `SHA256SUMS.txt` on each release.
 
 The app checks GitHub for a newer version (Settings > About) and tells you when one is available.
 
