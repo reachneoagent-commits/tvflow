@@ -75,3 +75,6 @@ app.*.map.json
 /android/key.properties
 *.jks
 *.keystore
+
+# Brand sources are kept outside the repo
+/brand/
