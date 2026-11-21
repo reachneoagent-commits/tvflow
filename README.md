@@ -1,6 +1,11 @@
-# TVflow
+<p align="left">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/header-dark.png">
+    <img src="assets/header-light.png" width="600" height="160" alt="TVflow logo and name">
+  </picture>
+</p>
 
-**Stream. Discover. Enjoy.** A free, local-first IPTV player for Mac, Windows, Android, Fire TV and Roku.
+<p align="center"><b>Stream. Discover. Enjoy.</b> A free, local-first IPTV player for Mac, Windows, Android, Fire TV and Roku.</p>
 
 TVflow plays playlists you add yourself (M3U links, Xtream Codes logins or Stalker portals). It does not include or provide any channels, playlists or content.
 
@@ -17,6 +22,13 @@ TVflow plays playlists you add yourself (M3U links, Xtream Codes logins or Stalk
 Older versions are on the [Releases page](../../releases). Checksums are in `SHA256SUMS.txt` on each release.
 
 The app checks GitHub for a newer version (Settings > About) and tells you when one is available.
+
+## Supported platforms
+
+- **Mac:** Apple silicon and Intel (one universal DMG)
+- **Windows:** x64
+- **Android:** phones, tablets and Android TV
+- **Fire TV** and **Roku**
 
 ## Features
 
